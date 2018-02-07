@@ -32,14 +32,14 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 <!--  vvvvv THIS IS WHERE THE CONTENT GOES! vvvvvvv  -->
 
 ### Publishing Data using GitHub 
-<img height="100" data-src="img/github_logo.jpg">
+<img height="150" data-src="img/github_logo.jpg">
 <hr/>
 <small><b>José Calvo Tello</b></small>
 <br/>
 <small>University of Würzburg, 2018</small>
 <br/>
 <hr/>
-<small>Presentation: https://morethanbooks.github.io/bne2017/</small>
+<small>Presentation: https://morethanbooks.github.io/workshop-github/</small>
 <p><img height="40" data-src="img/basics/UWUE.jpg"></img>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img height="80" data-src="img/basics/CLiGS.jpg"></img>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img height="40" data-src="img/basics/BMBF.jpg"></img></p>
 
 ---
@@ -54,10 +54,14 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
     * Branches
     * Release
     * Zenodo
+    * GitHub Pages
     * More  Features
 * Hands-on (45 minutes)
 
 ---
+## GitHub
+
+--
 ## GitHub
 
 * "GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere."
@@ -94,7 +98,17 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 
 <img data-src="img/textbox.png"/>
 
+
+--
+## Examples
+* XML-TEI Bible
+
+<img data-src="img/bible.png"/>
+
 ---
+## Getting Ready
+
+--
 ## Account
 
 * https://github.com/
@@ -108,10 +122,14 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 
 * Command line
 * sudo apt-get install git
+
+<img data-src="img/command-line.png"/>
+
 --
 ## Windows vs Mac and Linux
 
 * GitHub Desktop
+
 <img data-src="img/github-desktop.png"/>
 
 --
@@ -140,11 +158,11 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 ## Main Worflow
 
 <ol>
-	<li>git pull</li>
+	<li>pull (git pull)</li>
 	<li>(change something in your project)</li>
-	<li>git add (git add -A)</li>
-	<li>git commit (git commit -m "New documentation)</li>
-	<li>git push</li>
+	<li>add (git add -A)</li>
+	<li>commit (git commit -m "New documentation")</li>
+	<li>push (gut push)</li>
 </ol>
 
 --
@@ -156,7 +174,7 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 ## Main Worflow (Windows)
 
 <ol>
-	<li>Fetch</li>
+	<li>fetch</li>
 	<li>(do something)</li>
 	<li>commit</li>
 	<li>push</li>
@@ -183,9 +201,19 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 
 <img data-src="img/push-windows.png" height="500"/>
 
+--
+## Going Back
+
+* Repository > Commits
+
+<img data-src="img/going-back.png"/>
+
 ---
 ## New Repositories
 
+
+--
+## New Repositories
 <img data-src="img/new-repo.png" height="500"/>
 
 --
@@ -201,7 +229,11 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 * git push -u origin master
 
 ---
-## Other features
+## Private Repositories
+
+--
+## Private repositories
+
 * Private repositories
 * GitHub Education (<a href="https://education.github.com/discount_requests/new">link</a>)
 
@@ -221,7 +253,7 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 ## Hands-on
 
 * Create an account
-* Install Git
+* Install Git / GitHub Desktop
 * Clone a couple of other people's repositories
 * Create a new repository
 * Start making changes and commit them
@@ -233,21 +265,27 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 ---
 ## Publishing our Data
 
+--
+## Publishing our Data
+
 * Branches
-* Release
+* Releases
 * Zenodo
-* GitHub.io
+* GitHub Pages
 * More Features
 
----
+--
 ## Real Life with GitHub
 
 <img data-src="img/xkcd.png" height="400"/>
 
 ---
+## Versions of a project: Branches
+
+--
 ## Versions of a project
 
-<img data-src="img/versions.png" height="400"/>
+<img data-src="img/versions.png" height="600"/>
 
 --
 ## Versions of a project
@@ -262,9 +300,9 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 
 --
 ## Branch
-* Branching is the way to work on different versions of a repository at one time. By default your repository has one branch named master which is considered to be the definitive branch.
-<a href="https://guides.github.com/activities/hello-world/">GitHub Guides</a>
 
+* "Branching is the way to work on different versions of a repository at one time. By default your repository has one branch named master which is considered to be the definitive branch."
+<a href="https://guides.github.com/activities/hello-world/">GitHub Guides</a>
 
 --
 ## New Branch
@@ -274,52 +312,58 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 --
 ## New Branch
 
-<img data-src="img/branches.png" height="400"/>
+<img data-src="img/branches.png" height="300"/>
 
 --
 ## New Branch
 
-* Linux: git checkout -NameOfBranch
+* Linux: git checkout NameOfBranch
 * Windows: "Current branch"
 
-<img data-src="img/windows-branches.png" height="400"/>
-
+<img data-src="img/windows-branches.png" height="300"/>
 
 --
 ## Beware of Branches!
 
 <img data-src="img/falling-branches.png" height="400"/>
 
-* master and develop
+* Suggestions:
+	* master and develop
+	* master and specificFeature
 
 --
 ## Merging Branches
 
 * Different branches
+
 <img data-src="img/different-branches.png" height="400"/>
 
 --
 ## Merging Branches
 
 * Pull request
+
 <img data-src="img/pull-request1.png" height="400"/>
 
 --
 ## Merging Branches
 
 * Confirm Merging
+
 <img data-src="img/pull-request2.png" height="400"/>
 
 --
 ## Merging Branches
 
 * Diff
+
 <img data-src="img/merge-diff.png" height="400"/>
 
 --
 ## Merging Branches
 
 * Merged
+
 <img data-src="img/merged.png" height="400"/>
 
 --
@@ -339,51 +383,188 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 
 <img data-src="img/pulling-deleted-branch.png" height="400"/>
 
+* git pull
+* git branch -d oldBranch
+
 ---
+## Releases
+
+--
 ## Releases
 
 * "Releases are GitHub's way of packaging and providing software to your users. You can think of it as a replacement to using downloads to provide software."
 <a href="https://help.github.com/articles/about-releases/">source</a>
 
+--
+## Releases
+
+* Repository > Releases > Draft a new release
+
+<img data-src="img/release1.png" height="400"/>
+
+--
+## Releases
+
+* Repository > Releases > Draft a new release
+
+<img data-src="img/release2.png" height="400"/>
+
+--
+## Releases
+
+* Repository > Releases
+
+<img data-src="img/release3.png" height="400"/>
+
 ---
+## Long Term Storing
+
+--
 ## Zenodo
 
 * "The OpenAIRE project, in the vanguard of the open access and open data movements in Europe was commissioned by the EC to support their nascent Open Data policy by providing a catch-all repository for EC funded research. CERN, an OpenAIRE partner and pioneer in open source, open access and open data, provided this capability and Zenodo was launched in May 2013."
 
 <a href="http://about.zenodo.org/">Source</a>
 
----
-## GitHub.io
+<img data-src="img/zenodo-logo.png"/>
 
-* Repository: username.github.io
+--
+## Zenodo
+
+<ol>
+	<li>Sign-in</li>
+	<li>Enable repository</li>
+	<li>Make new release</li>
+	<li>Get DOI</li>
+</ol>
+
+<img data-src="img/zenodo-logo.png"/>
+
+--
+## Zenodo
+<img data-src="img/zenodo1.png" height="500"/>
+
+--
+## Zenodo
+<img data-src="img/zenodo2.png" height="500"/>
+
+--
+## Zenodo
+<img data-src="img/zenodo3.png" height="500"/>
+
+--
+## Zenodo
+<img data-src="img/zenodo4.png" height="500"/>
+
+--
+## DARIAH-DE Repository
+
+* <a href="https://repository.de.dariah.eu/publikator/">link</a>
+* Organization
+* Sign-in using your credentials
+
+---
+## GitHub Pages
+
+
+--
+## GitHub Pages
+
+* "GitHub Pages are public webpages hosted and easily published through GitHub. " <a href="https://guides.github.com/features/pages/">Source</a>
+* https://morethanbooks.github.io/workshop-github
+* https://dlina.github.io/
+
+--
+## GitHub Pages
+
+* Create GitHub-pages-Repository: username.github.io
 * Branch of repository: master
 * Repository: index.html
 * Repository > Settings > GitHub Pages
 * username.github.io
 
+--
+## GitHub Pages
+
+<img data-src="img/gh-pages1.png" height="500"/>
+
+--
+## GitHub Pages
+
+<img data-src="img/gh-pages2.png" height="500"/>
+
+--
+## Other repository in GitHub.io
+
+* For example for <a href="https://github.com/hakimel/reveal.js/">Reveal Presentations</a>
+* https://morethanbooks.github.io/workshop-github
 
 --
 ## Other repository in GitHub.io
 
 * Repository: NameOfRepo
-* Branch of repository: gh-pages
-* Repository: 
+* New branch of repository: gh-pages
+* gh-pages as Default branch
 * Repository > Settings > GitHub Pages
-* username.github.io
-
---
-## Renaming branch
-
-* git branch -m oldname gh-pages
-* git branch -m gh-pages 
-
---
-## 
+* username.github.io/NameOfRepo
 
 ---
 ## Useful features
 
+--
+## Organizations
 
+<img data-src="img/organizations.png" height="500"/>
+
+--
+## Notebooks
+
+<img data-src="img/notebooks.png" height="500"/>
+
+* <a href="https://github.com/jakevdp/PythonDataScienceHandbook">*Python Data Science Handbook*</a> by Jave VanderPlas 
+
+--
+## Tables
+
+<img data-src="img/tables.png" height="500"/>
+
+---
+## GitHub
+
+* Overview of GitHub 
+    * Main Features
+    * Basic Workflow
+    * New Repositories
+* Publishing our Data
+    * Branches
+    * Release
+    * Zenodo
+    * GitHub Pages
+    * More  Features
+* Hands-on (45 minutes)
+
+--
+## GitHub
+
+
+
+---
+## Hands-on
+
+* Make a new branch
+* Commit some changes to it
+* Merge the branches
+* Make a release
+* Create a GitHub Pages repository
+* Go to username.github.io and confirm that you are seeing your index.html
+
+If you have material:
+
+* Sign in Zenodo in
+* Enable your repository
+* Make a release and publish it through Zenodo
+
+--
 
 
 ---
