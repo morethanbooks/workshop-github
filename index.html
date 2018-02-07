@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <title>Publishing Data using GitHub </title>
+<meta name="author" content="José Calvo">
+<meta name="description" content="Slides">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="lib/css/zenburn.css">
+<script>
+var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+<!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="reveal">
+<div class="slides">
+<section data-markdown="" data-separator="^\n---\n" data-separator-vertical="^\n--\n" data-charset="utf-8">
+<script type="text/template">
+
+<!--  vvvvv THIS IS WHERE THE CONTENT GOES! vvvvvvv  -->
+
+### Publishing Data using GitHub 
+<img height="100" data-src="img/github_logo.jpg">
+<hr/>
+<small><b>José Calvo Tello</b></small>
+<br/>
+<small>University of Würzburg, 2018</small>
+<br/>
+<hr/>
+<small>Presentation: https://morethanbooks.github.io/bne2017/</small>
+<p><img height="40" data-src="img/basics/UWUE.jpg"></img>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img height="80" data-src="img/basics/CLiGS.jpg"></img>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img height="40" data-src="img/basics/BMBF.jpg"></img></p>
+
+---
+## Content
+
+* Overview of GitHub (45 minutes)
+    * Main Features
+    * Basic Workflow
+    * New Repositories
+* Hands-on (45 minutes)
+* Publishing our Data (45 minutes)
+    * Branches
+    * Release
+    * Zenodo
+    * More  Features
+* Hands-on (45 minutes)
+
+---
+## GitHub
+
+* "GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere."
+<a href="https://guides.github.com/activities/hello-world/">GitHub Guides</a>
+* Publishing code and data
+
+--
+## References
+* <a href="https://guides.github.com/activities/hello-world/">GitHub Guides</a>
+* <a href="https://programminghistorian.org/lessons/getting-started-with-github-desktop/">An Introduction to Version Control Using GitHub Desktop</a>, by Daniel van Strien (<i>Programming Historian</i>)
+* <a href="http://rogerdudler.github.io/git-guide/"> git - the simple guide</a>, by Roger Dudler
+
+--
+## Examples
+* TEI
+
+<img data-src="img/tei.png"></img>
+
+--
+## Examples
+* Stylo
+
+<img data-src="img/stylo.png" />
+
+--
+## Examples
+* DLINA
+
+<img data-src="img/dlina.png"/>
+
+--
+## Examples
+* CLiGS Textbox
+
+<img data-src="img/textbox.png"/>
+
+---
+## Account
+
+* https://github.com/
+
+--
+## Installing
+* <a href="https://gist.github.com/derhuerst/1b15ff4652a867391f03">Installing Git, the easy way</a>, by Jannis Redmann
+
+--
+## Windows vs Mac and Linux
+
+* Command line
+* sudo apt-get install git
+--
+## Windows vs Mac and Linux
+
+* GitHub Desktop
+<img data-src="img/github-desktop.png"/>
+
+--
+## Repositories
+* "A repository is usually used to organize a single project. Repositories can contain folders and files, images, videos, spreadsheets, and data sets – anything your project needs."
+<a href="https://guides.github.com/activities/hello-world/">GitHub Guides</a>
+
+--
+## Clone
+* git clone https://github.com/cligs/textbox.git
+* git clone https://github.com/morethanbooks/tests.git
+
+<img data-src="img/clone-textbox.png"/>
+
+--
+## Clone
+* File > clone repository
+
+<img data-src="img/clone-disco.png"/>
+
+
+---
+## Main Worflow
+
+--
+## Main Worflow
+
+<ol>
+	<li>git pull</li>
+	<li>(change something in your project)</li>
+	<li>git add (git add -A)</li>
+	<li>git commit (git commit -m "New documentation)</li>
+	<li>git push</li>
+</ol>
+
+--
+## Main Workflow (Ubuntu)
+
+<img data-src="img/main-workflow-ubuntu.png"/>
+
+--
+## Main Worflow (Windows)
+
+<ol>
+	<li>Fetch</li>
+	<li>(do something)</li>
+	<li>commit</li>
+	<li>push</li>
+</ol>
+
+--
+## Main Workflow (Windows)
+
+* (add)
+
+<img data-src="img/add-windows.png" width="500"/>
+
+--
+## Main Workflow (Windows)
+
+* commit
+
+<img data-src="img/commit-windows.png" height="500"/>
+
+--
+## Main Workflow (Windows)
+
+* push
+
+<img data-src="img/push-windows.png" height="500"/>
+
+---
+## New Repositories
+
+<img data-src="img/new-repo.png" height="500"/>
+
+--
+## New Repositories
+
+<img data-src="img/new-repo-def.png" height="500"/>
+
+---
+## Other features
+* Private repositories
+* GitHub Education (<a href="https://education.github.com/discount_requests/new">link</a>)
+
+<img data-src="img/github-education.png" height="200" />
+
+
+--
+## GitLab
+
+* GitLab (<a href="https://about.gitlab.com/">link</a>)
+* <a href="https://usersnap.com/blog/gitlab-github/">GitLab vs GitHub: Key differences & similarities</a>, by Thomas Peham
+* <a href="https://www.upwork.com/hiring/development/gitlab-vs-github-how-are-they-different/">GitLab vs. GitHub: How Are They Different?</a>, by Carey Wodehouse
+
+<img data-src="img/gitlab.png" height="200"/>
+
+---
+## Hands-on
+
+* Create an account
+* Install Git
+* Clone a couple of other people's repositories
+* Create a new repository
+* Start making changes and commit them
+* Push the commits
+* See your commits in Browser
+* Go back to previous versions of your own repository
+* Clone it somewhere else in your computer
+
+---
+## Publishing our Data
+
+* Branches
+* Release
+* Zenodo
+* GitHub.io
+* More Features
+
+---
+## Real Life with GitHub
+
+<img data-src="img/xkcd.png" height="400"/>
+
+---
+## Versions of a project
+
+<img data-src="img/versions.png" height="400"/>
+
+--
+## Versions of a project
+
+* master
+	* dh2016
+		* testing	
+	* dhd2017
+		* dh2017
+			* use this one
+	* dh2018
+
+--
+## Branch
+* Branching is the way to work on different versions of a repository at one time. By default your repository has one branch named master which is considered to be the definitive branch.
+<a href="https://guides.github.com/activities/hello-world/">GitHub Guides</a>
+
+
+--
+## New Branch
+
+<img data-src="img/readme-edits.gif" height="400"/>
+
+--
+## New Branch
+
+<img data-src="img/branches.png" height="400"/>
+
+--
+## New Branch
+
+* Linux: git checkout -NameOfBranch
+* Windows: "Current branch"
+
+<img data-src="img/windows-branches.png" height="400"/>
+
+
+--
+## Beware of Branches!
+
+<img data-src="img/falling-branches.png" height="400"/>
+
+* master and develop
+
+--
+## Merging Branches
+
+* Different branches
+<img data-src="img/different-branches.png" height="400"/>
+
+--
+## Merging Branches
+
+* Pull request
+<img data-src="img/pull-request1.png" height="400"/>
+
+--
+## Merging Branches
+
+* Confirm Merging
+<img data-src="img/pull-request2.png" height="400"/>
+
+--
+## Merging Branches
+
+* Diff
+<img data-src="img/merge-diff.png" height="400"/>
+
+--
+## Merging Branches
+
+* Merged
+<img data-src="img/merged.png" height="400"/>
+
+--
+## Merged Branch
+
+<img data-src="img/merged-branch.png" height="400"/>
+
+--
+## Merged Branch
+
+* Delete branch
+<img data-src="img/deleted-merged-branch.png" height="400"/>
+
+
+--
+## Pull/Fetch into your Git
+
+<img data-src="img/pulling-deleted-branch.png" height="400"/>
+
+---
+## Releases
+
+* "Releases are GitHub's way of packaging and providing software to your users. You can think of it as a replacement to using downloads to provide software."
+<a href="https://help.github.com/articles/about-releases/">source</a>
+
+---
+## Zenodo
+
+* "The OpenAIRE project, in the vanguard of the open access and open data movements in Europe was commissioned by the EC to support their nascent Open Data policy by providing a catch-all repository for EC funded research. CERN, an OpenAIRE partner and pioneer in open source, open access and open data, provided this capability and Zenodo was launched in May 2013."
+
+<a href="http://about.zenodo.org/">Source</a>
+
+---
+## GitHub.io
+
+* Repository: username.github.io
+* Branch of repository: master
+* Repository: index.html
+* Repository > Settings > GitHub Pages
+* username.github.io
+
+--
+## Other repository in GitHub.io
+
+* Repository: NameOfRepo
+* Branch of repository: gh-pages
+* Repository: 
+* Repository > Settings > GitHub Pages
+* username.github.io
+
+--
+## 
+
+---
+## Useful features
+
+
+
+
+---
+
+
+<!--^^^^^^^ DON'T TOUCH UNLESS YOU KNOW WHAT YOU'RE DOING :-) ^^^^^^^-->
+
+</script>
+</section>
+</div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<script>
+// Full list of configuration options available at:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    transition: 'slide', // none/fade/slide/convex/concave/zoom
+    // Optional reveal.js plugins
+    dependencies: [
+        { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'plugin/zoom-js/zoom.js', async: true },
+        { src: 'plugin/notes/notes.js', async: true }
+        ]
+    });
+</script>
+</body>
+</html>
